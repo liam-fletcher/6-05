@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <body>
+
+<h2>Age and the day of the week for school or work</h2>
+
+<p>Step 1: Please input your age</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+ var x, text;
+
+ // Get the value of the input field with id="numb"
+ x = document.getElementById("numb").value;
+
+ // If x is Not a Number or less than one or greater than 99
+ if (isNaN(x) || x < 18 || x > 99 ) {
+   text = "You're under the age of 18, so you're going to school but lets see what day it is, go to step 2";
+ } else {
+   text = "You're over the age of 18, so you're going to work but lets see what day it is, go to step 2";
+ }
+ document.getElementById("demo").innerHTML = text;
+}
+</script>
+<br>
+<br>
+<p>Step 2: Please input the day of the week as a number</p>
+
+<p> weekday[1]="Monday"
+  <br>
+weekday[2]="Tuesday"
+<br>
+weekday[3]="Wednesday"
+<br>
+weekday[4]="Thursday"
+<br>
+weekday[5]="Friday"
+<br>
+weekday[6]="Saturday"
+<br>
+weekday[7]="Sunday"
+<p>
+
+<input id="day">
+
+<button type="buttonn" onclick="myyFunction()">Submit</button>
+
+<p id="demoo"></p>
+
+<script>
+function myyFunction() {
+ var x, text;
+
+ // Get the value of the input field with id="day"
+ x = document.getElementById("day").value;
+
+ // If the day of the week is time for school or weekend
+ if (isNaN(x) || x < 6 || x > 7) {
+   text = "Time for school if you're under the age of 18, Time for work if you're over the age of 18 ";
+ } else {
+   text = "Time to relax for the weekend!";
+ } 
+ document.getElementById("demoo").innerHTML = text;
+}
+</script>
+
+
+
+  
